@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-rdqx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/redhat-appstudio-qe/spi-demos-yhkd-tenant/image-repository-cr-dotnet-component/devfile-sample-dotnet60-basic-rdqx@sha256:5a127da7eab0b25acf65c74701f53834eb01fe96d75cbe4a3bd97221a737661f
+        name: main
+        resources: {}
+status: {}
